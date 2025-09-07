@@ -1,62 +1,74 @@
-<h2>CHRf0-Only-Player01</h2>
-<table>
-    <tr>
-        <th>Test clip</th>
-        <th>Reference</th>
-        <th>DDSP-bsl</th>
-        <th>DDSP-hmag</th>
-        <th>DDSP-inharm</th>
-        <th>DDSP-hmag-inharm</th>
-    </tr>
-    <tr>
-        <td><!-- audio player for Test clip 1 --></td>
-        <td><!-- audio player for Reference 1 --></td>
-        <td><!-- audio player for DDSP-bsl 1 --></td>
-        <td><!-- audio player for DDSP-hmag 1 --></td>
-        <td><!-- audio player for DDSP-inharm 1 --></td>
-        <td><!-- audio player for DDSP-hmag-inharm 1 --></td>
-    </tr>
-    <!-- Add more rows as needed -->
-</table>
-
-<h2>CHRf0</h2>
-<table>
-    <tr>
-        <th>Test clip</th>
-        <th>Reference</th>
-        <th>DDSP-bsl</th>
-        <th>DDSP-hmag</th>
-        <th>DDSP-inharm</th>
-        <th>DDSP-hmag-inharm</th>
-    </tr>
-    <tr>
-        <td><!-- audio player for Test clip 2 --></td>
-        <td><!-- audio player for Reference 2 --></td>
-        <td><!-- audio player for DDSP-bsl 2 --></td>
-        <td><!-- audio player for DDSP-hmag 2 --></td>
-        <td><!-- audio player for DDSP-inharm 2 --></td>
-        <td><!-- audio player for DDSP-hmag-inharm 2 --></td>
-    </tr>
-    <!-- Add more rows as needed -->
-</table>
-
-<h2>SWIPEf0</h2>
-<table>
-    <tr>
-        <th>Test clip</th>
-        <th>Reference</th>
-        <th>DDSP-bsl</th>
-        <th>DDSP-hmag</th>
-        <th>DDSP-inharm</th>
-        <th>DDSP-hmag-inharm</th>
-    </tr>
-    <tr>
-        <td><!-- audio player for Test clip 3 --></td>
-        <td><!-- audio player for Reference 3 --></td>
-        <td><!-- audio player for DDSP-bsl 3 --></td>
-        <td><!-- audio player for DDSP-hmag 3 --></td>
-        <td><!-- audio player for DDSP-inharm 3 --></td>
-        <td><!-- audio player for DDSP-hmag-inharm 3 --></td>
-    </tr>
-    <!-- Add more rows as needed -->
-</table>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Audio Demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5 mb-3 text-center">Audio Demos for Timbre-Informed DDSP Violin</h1>
+    <p class="lead text-center">
+        This page presents audio demos trained on [Violin Etudes dataset] (https://repositori.upf.edu/items/e9db27dd-ac25-45c1-a2e4-707f40372eda). Replace the placeholder audio files in the <code>docs/audio</code> directory with your own samples.
+    </p>
+    <table class="table table-sm text-center">
+        <tr>
+            <th>Test clip</th>
+            <th>Reference</th>
+            <th>DDSP-bsl</th>
+            <th>DDSP-hmag</th>
+            <th>DDSP-inharm<th>
+            <th>DDSP-hmag-inharm<th>
+        </tr>
+        <tr>
+            <td>Sample 1</td>
+            <td>
+                <audio controls class="player" preload="metadata">
+                    <source src="audio/sample1_ref.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls class="player" preload="metadata">
+                    <source src="audio/sample1_a.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls class="player" preload="metadata">
+                    <source src="audio/sample1_b.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls class="player" preload="metadata">
+                    <source src="audio/sample1_c.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls class="player" preload="metadata">
+                    <source src="audio/sample1_d.wav" type="audio/wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>Sample 2</td>
+            <td>
+                <audio controls class="player" preload="metadata">
+                    <source src="audio/sample2_ref.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls class="player" preload="metadata">
+                    <source src="audio/sample2_a.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls class="player" preload="metadata">
+                    <source src="audio/sample2_b.wav" type="audio/wav">
+                </audio>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
