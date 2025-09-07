@@ -1,74 +1,154 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Audio Demo</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Audio Demo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* 保持你原有样式的同时，轻微优化表头与区块间距 */
+    h2.section-title { margin-top: 3rem; margin-bottom: .75rem; text-align:center; }
+    .sublead { text-align:center; margin-bottom: 1.75rem; color:#6c757d; }
+    table.audio-table thead th { white-space: nowrap; }
+    audio.player { width: 180px; }
+  </style>
 </head>
 <body>
-<div class="container">
+  <div class="container">
     <h1 class="mt-5 mb-3 text-center">Audio Demos for Timbre-Informed DDSP Violin</h1>
     <p class="lead text-center">
-        This page presents audio demos trained on [Violin Etudes dataset] (https://repositori.upf.edu/items/e9db27dd-ac25-45c1-a2e4-707f40372eda). Replace the placeholder audio files in the <code>docs/audio</code> directory with your own samples.
+      This page presents audio demos trained on
+      <a href="https://repositori.upf.edu/items/e9db27dd-ac25-45c1-a2e4-707f40372eda" target="_blank" rel="noopener">Violin Etudes dataset</a>.
+      Replace the placeholder audio files in the <code>docs/audio</code> directory with your own samples.
     </p>
-    <table class="table table-sm text-center">
+
+    <!-- ===== Block 1: CHRf0-Only-Player01 ===== -->
+    <h2 class="section-title">CHRf0-Only-Player01</h2>
+    <p class="sublead">Demo table</p>
+    <table class="table table-sm text-center audio-table">
+      <thead>
         <tr>
-            <th>Test clip</th>
-            <th>Reference</th>
-            <th>DDSP-bsl</th>
-            <th>DDSP-hmag</th>
-            <th>DDSP-inharm<th>
-            <th>DDSP-hmag-inharm<th>
+          <th>Test clip</th>
+          <th>Reference</th>
+          <th>DDSP-bsl</th>
+          <th>DDSP-hmag</th>
+          <th>DDSP-inharm</th>
+          <th>DDSP-hmag-inharm</th>
         </tr>
+      </thead>
+      <tbody>
+        <!-- Row 1 -->
         <tr>
-            <td>Sample 1</td>
-            <td>
-                <audio controls class="player" preload="metadata">
-                    <source src="audio/sample1_ref.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls class="player" preload="metadata">
-                    <source src="audio/sample1_a.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls class="player" preload="metadata">
-                    <source src="audio/sample1_b.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls class="player" preload="metadata">
-                    <source src="audio/sample1_c.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls class="player" preload="metadata">
-                    <source src="audio/sample1_d.wav" type="audio/wav">
-                </audio>
-            </td>
+          <td>p361_004</td>
+          <td>
+            <audio controls class="player" preload="metadata">
+              <source src="audio/CHRonly_ref_p361_004.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls class="player" preload="metadata">
+              <source src="audio/CHRonly_bsl_p361_004.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls class="player" preload="metadata">
+              <source src="audio/CHRonly_hmag_p361_004.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls class="player" preload="metadata">
+              <source src="audio/CHRonly_inharm_p361_004.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls class="player" preload="metadata">
+              <source src="audio/CHRonly_hmaginharm_p361_004.wav" type="audio/wav">
+            </audio>
+          </td>
         </tr>
+        <!-- Row 2 -->
         <tr>
-            <td>Sample 2</td>
-            <td>
-                <audio controls class="player" preload="metadata">
-                    <source src="audio/sample2_ref.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls class="player" preload="metadata">
-                    <source src="audio/sample2_a.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls class="player" preload="metadata">
-                    <source src="audio/sample2_b.wav" type="audio/wav">
-                </audio>
-            </td>
+          <td>p361_006</td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHRonly_ref_p361_006.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHRonly_bsl_p361_006.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHRonly_hmag_p361_006.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHRonly_inharm_p361_006.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHRonly_hmaginharm_p361_006.wav" type="audio/wav"></audio></td>
         </tr>
+        <!-- TODO: 继续加行 -->
+      </tbody>
     </table>
-</div>
+
+    <!-- ===== Block 2: CHRf0 ===== -->
+    <h2 class="section-title">CHRf0</h2>
+    <p class="sublead">Demo table</p>
+    <table class="table table-sm text-center audio-table">
+      <thead>
+        <tr>
+          <th>Test clip</th>
+          <th>Reference</th>
+          <th>DDSP-bsl</th>
+          <th>DDSP-hmag</th>
+          <th>DDSP-inharm</th>
+          <th>DDSP-hmag-inharm</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>p360_003</td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHR_ref_p360_003.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHR_bsl_p360_003.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHR_hmag_p360_003.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHR_inharm_p360_003.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHR_hmaginharm_p360_003.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>p360_005</td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHR_ref_p360_005.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHR_bsl_p360_005.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHR_hmag_p360_005.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHR_inharm_p360_005.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/CHR_hmaginharm_p360_005.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ===== Block 3: SWIPEf0 ===== -->
+    <h2 class="section-title">SWIPEf0</h2>
+    <p class="sublead">Demo table</p>
+    <table class="table table-sm text-center audio-table">
+      <thead>
+        <tr>
+          <th>Test clip</th>
+          <th>Reference</th>
+          <th>DDSP-bsl</th>
+          <th>DDSP-hmag</th>
+          <th>DDSP-inharm</th>
+          <th>DDSP-hmag-inharm</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sample 1</td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/SWIPE_ref_s1.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/SWIPE_bsl_s1.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/SWIPE_hmag_s1.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/SWIPE_inharm_s1.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/SWIPE_hmaginharm_s1.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>Sample 2</td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/SWIPE_ref_s2.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/SWIPE_bsl_s2.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/SWIPE_hmag_s2.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/SWIPE_inharm_s2.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="player" preload="metadata"><source src="audio/SWIPE_hmaginharm_s2.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="mb-5"></div>
+  </div>
 </body>
 </html>
